@@ -1,0 +1,17 @@
+<% layout("partials/boilerplate.ejs") %>
+<div class="d-flex flex-row flex-wrap">
+  <% for (let motorcycle of Motorcycles) {%>
+  <div class="col-3">
+    <div class="card" style="width: 18rem">
+      <img src="<%=motorcycle.image%>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%=motorcycle.model%></h5>
+        <p class="card-text"><%=motorcycle.manufacturer%></p>
+        <p class="card-text"><%=motorcycle.price%></p>
+        <p class="card-text"><%=motorcycle.rating%></p>
+          <a href="/motorcycle/<%=motorcycle._id%>" class="btn btn-info">View <%=motorcycle.model%></a>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>

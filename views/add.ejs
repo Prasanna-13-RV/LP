@@ -1,0 +1,14 @@
+<% layout("partials/boilerplate.ejs") %>
+<form action="/motorcycle/add" method="POST">
+    <label for="model">Model</label>
+    <input name="motorcycle[model]" type="text" id="model" placeholder="Model">
+    <label for="manufacturer">Manufacturer</label>
+    <input name="motorcycle[manufacturer]" type="text" id="manufacturer" placeholder="Manufacprice">
+    <label for="price">Price</label>
+    <input name="motorcycle[price]" type="number" id="price"placeholder="Price">
+    <label for="rating">Rating</label>
+    <input name="motorcycle[rating]" type="number" id="rating"placeholder="Rating">
+    <label for="imageurl">Image Url</label>
+    <input name="motorcycle[image]" type="text" id="imageurl" placeholder="Image Url">
+    <button>Add</button>
+</form>

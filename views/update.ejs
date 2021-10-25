@@ -1,0 +1,14 @@
+<% layout("partials/boilerplate.ejs") %>
+<form action="/motorcycle/<%=motorcycle._id%>?_Method=PUT" method="POST">
+    <label for="model">Model</label>
+    <input name="motorcycle[model]" type="text" id="model"  value="<%=motorcycle.model%>" placeholder="Model">
+    <label for="manufacturer">Manufacturer</label>
+    <input name="motorcycle[manufacturer]" type="text" id="manufacturer"  value="<%=motorcycle.manufacturer%>" placeholder="Manufacprice">
+    <label for="price">Price</label>
+    <input name="motorcycle[price]" type="number" id="price" value="<%=motorcycle.price%>" placeholder="Price">
+    <label for="price">Rating</label>
+    <input name="motorcycle[rating]" type="number" id="rating" value="<%=motorcycle.rating%>" placeholder="Rating">
+    <label for="imageurl">Image Url</label>
+    <input name="motorcycle[image]" type="text" id="imageurl"  value="<%=motorcycle.image%>" placeholder="Image Url">
+    <button>Update</button>
+</form>

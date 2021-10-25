@@ -1,0 +1,21 @@
+<% layout("partials/boilerplate.ejs") %>
+<div class="card" style="width: 18rem">
+  <img src="<%=motorcycle.image%>" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title"><%=motorcycle.model%></h5>
+    <p class="card-text"><%=motorcycle.manufacturer%></p>
+    <p class="card-text"><%=motorcycle.price%></p>
+    <p class="card-text"><%=motorcycle.rating%></p>
+    <div class="d-flex">
+      <a href="/motorcycles/<%=motorcycle._id%>/update" class="btn btn-info"
+        >Update</a
+      >
+      <form
+        action="/motorcycles/<%=motorcycle._id%>/delete?_Method=DELETE"
+        method="POST"
+      >
+        <button class="btn-danger btn">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>
